@@ -44,6 +44,10 @@ def hit?(num)
       invalid_command
       prompt_user
       action = get_user_input
+      if action == "h"
+        num += deal_card
+        display_card_total(num)
+      end
   end
   num
 end
