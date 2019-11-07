@@ -36,7 +36,6 @@ def hit?(num)
   prompt_user
   action = get_user_input
   if action == "s"
-    num
   elsif action == "h"
     num += deal_card
     display_card_total(num)
