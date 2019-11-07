@@ -44,6 +44,7 @@ def hit?(num)
       invalid_command
       prompt_user
       action = get_user_input
+      num
     end
   end
 end
