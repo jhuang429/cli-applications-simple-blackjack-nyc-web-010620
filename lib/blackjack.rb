@@ -41,12 +41,9 @@ def hit?(num)
     num += deal_card
     display_card_total(num)
   else
-    while (action != "s" && action != "h") do
       invalid_command
       prompt_user
       action = get_user_input
-      end
-    end
   end
   num
 end
