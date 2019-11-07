@@ -40,15 +40,14 @@ def hit?(num)
   elsif action == "h"
     num += deal_card
     display_card_total(num)
-    num
   else
     while (action != "s" && action != "h") do
       invalid_command
       prompt_user
       action = get_user_input
-      num
     end
   end
+  num
 end
 
 def invalid_command
