@@ -43,7 +43,7 @@ def hit?(num)
       invalid_command
       prompt_user
       action = get_user_input
-      if action == "h"
+      if action == "h" #will perform action if user enters "h" after an error
         num += deal_card
         display_card_total(num)
       end
