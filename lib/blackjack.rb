@@ -41,8 +41,10 @@ def hit?(num)
     num
   else
     invalid_command
-    prompt_user
-    action = get_user_input
+    while action != "s" || "h" do
+      prompt_user
+      action = get_user_input
+    end
   end
 end
 
