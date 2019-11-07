@@ -47,6 +47,7 @@ def hit?(num)
       prompt_user
       action = get_user_input
       num
+      binding.pry
     end
   end
 end
